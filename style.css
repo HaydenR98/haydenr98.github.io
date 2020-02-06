@@ -1,0 +1,277 @@
+/* IMporting google font*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Adjusting logo image size*/
+.logo img {
+	width: 10rem;
+	height: 10rem;
+}
+img.graphic {
+	display: block;
+	margin: 0 auto;
+	max-width: 620.64px;
+}
+/*Making background color on body white*/
+body {
+	background-color: #F7F7FF;
+	font-family: 'Montserrat', sans-serif;
+}
+/*Styling text links*/
+a {
+	color: red;
+	text-decoration: none;
+}
+/* Giving the main section a margin*/
+.main {
+	margin: 2rem;
+}
+.headline {
+	max-width: 536px;
+}
+/* Adjusting headings size and making headings bold*/
+h1 {
+	font-weight: bold;
+	font-size: 60px;
+}
+h2 {
+	font-weight: bold;
+	font-size: 40px;
+}
+h3 {
+	font-weight: bold;
+	font-size: 18px;
+}
+/* Adjusting paragraph font sizes*/
+.headline p {
+	font-size: 24px
+}
+.bottom p {
+	font-size: 16px
+}
+footer p {
+	font-size: 16px;
+}
+/* Styling contact form, adding drop shadow and assigning a width*/
+form.sign-up-form {
+	padding: 1rem;
+    max-width: 500px;
+    background-color: white;
+    border: 1px;
+    border-radius: 8px;
+	box-shadow: 4px 4px 8px #a6a6a6;
+	margin: auto;
+}
+.sign-up-form-section {
+	padding: 0.5rem;
+}
+/* Styling input section of the contact form*/
+.sign-up-form-input {
+	display: block;
+	height: 2rem;
+	font-size: 1rem;
+	width: 100%;
+	background-color: #F4F4F5;
+	border-radius: 9px;
+	border: 1px;
+	border-style: hidden;
+}
+/* Changing color of the placeholder text*/
+input[type="text"], input[type="phone"], input[type="email"] {
+	color: #9B9B9B;
+}
+input[type="checkbox"] {
+	width: 1.2rem;
+	height: 1.2rem;
+	style: none;
+}
+button {
+	font-family: 'Montserrat', sans-serif;
+}
+button.drive-with-us {
+	width: 100%;
+	border-style: hidden;
+	border-radius: 9px;
+	height: 3rem;
+	background-color: #57EEAB;
+	font-size: 24px;
+	font-weight: bold;
+}
+form p {
+	font-size: 16px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+/* Extending margin of footer to fit to edges of the page*/
+footer {
+	margin: 0;
+}
+/*Changing footer background color and adding spacing to the top*/
+.bottom {
+	margin-top: 2rem;
+	background-color: #FFFD8C;
+}
+/* Centering social icon chart*/
+.social-icons {
+	padding-top:5rem;
+	padding-bottom: 1rem;
+	display: table;
+	margin: 0 auto;
+}
+/* Dsiplaying icons horizantally*/
+ul#social-icon-list li {
+	display: inline;
+}
+/* Adding padding to social icons*/
+li a {
+	padding: 1rem;
+}
+/* Styling calculation form*/
+form.calculate-form {
+	padding: 1rem;
+    max-width: 608px;
+    background-color: #FFFD8C;
+    border: 1px;
+    border-radius: 8px;
+	margin: auto;
+}
+/* Making calculation input a grid element and adding proper styling*/
+.calculate-form-input {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 1rem;
+	height: 2rem;
+	font-size: 1rem;
+	border-radius: 9px;
+	border: 1px;
+	border-style: hidden;
+}
+/* Aligning the city input in the grid*/
+input[type="city"] {
+	width: 100%;
+	background-color: #F4F4F5;
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+/* Aligning the hours input in the grid*/
+input[type="hours"] {
+	width: 100%;
+	background-color: #F4F4F5;
+	grid-column: 2/4;
+	grid-row: 1/2;
+}
+/* Styling the calculate button and aligning it in the grid*/
+button.calculate-button {
+	color: white;
+	width: 100%;
+	border-style: hidden;
+	border-radius: 9px;
+	height: 3rem;
+	background-color: #FF8480;
+	font-size: 24px;
+	font-weight: bold;
+	grid-column:1/4;
+	grid-row: 2/3;
+}
+/* Aligning items within the calculation form to better suit tablet viewport*/
+@media (min-width: 35rem) {
+	input[type="city"] {
+		width: 100%;
+		background-color: #F4F4F5;
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	input[type="hours"] {
+		width: 100%;
+		background-color: #F4F4F5;
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+	button.calculate-button {
+		height: 2rem;
+		grid-column: 3/4;
+		grid-row: 1/2;
+	}
+	.social-icons {
+		padding-top: 1rem;
+	}
+}
+
+@media (min-width: 65rem) {
+	.main {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
+	}
+	.headline {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+	img.graphic {
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+	.sign-up-form {
+		grid-column: 3/4;
+		grid-row: 2/3;
+	}
+	.bottom {
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-template-rows: repeat(1,1fr);
+	}
+	.calculate-form {
+		grid-column: 1/2;
+	}
+	.table {
+		grid-column: 2/3;
+		padding-top: 2rem;
+	}
+}

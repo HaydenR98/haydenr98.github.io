@@ -1,15 +1,78 @@
 <!DOCTYPE html>
+<!--Setting language to english-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hayden Robertson</h1>
-    <p>MTM6201 030</p>
-    <p>HaydenR98 a</p>
-    <p>Went snowboarding</p>
+    <div class="main">
+        <!--Adding logo to the header-->
+        <header class="logo" id="logo">
+            <img href="index.html" src="images/logo/logo.png" alt="logo">
+        </header>
+        <div class="headline">
+        <h1>Want to be Your Own Boss?</h1>
+        <p class="tagline">
+            Start today and make up to $30/hour driving your own vehicle with Dash!
+        </p>
+        </div>
+        <!--Adding background image-->
+            <img class="graphic" src="images/bg-image/scooter.svg" alt="scooter">
+        <!--Creating sign up form-->
+        <form class="sign-up-form">
+            <h2>
+                Apply Now
+            </h2>
+            <p>Enter your info below</p>
+            <div class="sign-up-form-section">
+                <input class="sign-up-form-input" type="text" placeholder="   First Name">
+            </div>
+            <div class="sign-up-form-section">
+                <input class="sign-up-form-input" type="text" placeholder="   Last Name">
+            </div>
+            <div class="sign-up-form-section">
+                <input class="sign-up-form-input" type="phone" placeholder="   Phone Number">
+            </div>
+            <div class="sign-up-form-section">
+                <input class="sign-up-form-input" type="email" placeholder="   Email">
+            </div>
+            <div>
+                <input type="checkbox" name="vehicle" value="Car" checked="unchecked">I agree to dash terms<br>
+            </div>
+            <button class="drive-with-us" type="submit">DRIVE WITH US</button>
+            <p>Already applied? <a href="">Check your application status here</a></p>
+        </form>
+    </div>
+      <footer>
+        <div class="bottom" id="bottom">
+        <!--Creating calculation form-->
+        <form class="calculate-form">
+            <h3>
+                See how much your can earn with Dash.
+            </h3>
+            <p>
+                How many hours do you want to drive with us this week?
+            </p>
+            <div class="calculate-form-input">
+                <input class="calculate-form-input" type="hours" placeholder="   Hours">
+                <input class="calculate-form-input" type="City" placeholder="   City">
+                <button class="calculate-button" type="CALCULATE">Calculate</button>
+            </div>
+        </form>
+        <div class="table">
+            <div class="social-icons">
+                <ul id="social-icon-list">
+                    <li><a href="https://instagram.com"><img src="images/icons/instagram.svg" alt="instagram"></li></a>
+                    <li><a href="https://facebook.com"><img src="images/icons/facebook.svg" alt="facebook"></li></a>
+                    <li><a href="https://twitter.com"><img src="images/icons/twitter.svg" alt="twitter"></li></a>
+                    <li><a href="https://linkedin.com"><img src="images/icons/linkedin.svg" alt="linkedin"></li></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
