@@ -1,5 +1,5 @@
 /* IMporting google font*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -134,6 +134,7 @@ input[type="checkbox"] {
 button {
 	font-family: 'Montserrat', sans-serif;
 }
+/* Styling the "drive with us" button*/
 button.drive-with-us {
 	width: 100%;
 	border-style: hidden;
@@ -143,6 +144,7 @@ button.drive-with-us {
 	font-size: 24px;
 	font-weight: bold;
 }
+/*Assigning font size and padding to paragraph text in forms*/
 form p {
 	font-size: 16px;
 	padding-top: 1rem;
@@ -157,6 +159,7 @@ footer {
 	margin-top: 2rem;
 	background-color: #FFFD8C;
 }
+/* Got help from https://css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think/*/
 /* Centering social icon chart*/
 .social-icons {
 	padding-top:5rem;
@@ -197,14 +200,14 @@ form.calculate-form {
 input[type="city"] {
 	width: 100%;
 	background-color: #F4F4F5;
-	grid-column: 1/2;
+	grid-column: 2/4;
 	grid-row: 1/2;
 }
 /* Aligning the hours input in the grid*/
 input[type="hours"] {
 	width: 100%;
 	background-color: #F4F4F5;
-	grid-column: 2/4;
+	grid-column: 1/2;
 	grid-row: 1/2;
 }
 /* Styling the calculate button and aligning it in the grid*/
@@ -222,16 +225,17 @@ button.calculate-button {
 }
 /* Aligning items within the calculation form to better suit tablet viewport*/
 @media (min-width: 35rem) {
+	/*Arranging inputs and buttons in grid to better suit tablet layout*/
 	input[type="city"] {
 		width: 100%;
 		background-color: #F4F4F5;
-		grid-column: 1/2;
+		grid-column: 2/3;
 		grid-row: 1/2;
 	}
 	input[type="hours"] {
 		width: 100%;
 		background-color: #F4F4F5;
-		grid-column: 2/3;
+		grid-column: 1/2;
 		grid-row: 1/2;
 	}
 	button.calculate-button {
@@ -243,8 +247,9 @@ button.calculate-button {
 		padding-top: 1rem;
 	}
 }
-
+/*Creating a breakpoint for a layout that better suits desktop view*/
 @media (min-width: 65rem) {
+	/* Arranging heading, forms, and background image for desktop view*/
 	.main {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
