@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- setting language to english -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking css style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- adding title -->
+    <title>Contact</title>
+</head>
+<body>
+    <!-- creating navigation wrapper -->
+    <div class="navigation">
+        <!-- adding navigation items -->
+        <a class="logo" href="index.html"><img src="img/logo.svg" alt="logo"></a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+    </div>
+    <!-- creating main wrapper -->
+    <div class="contact-main">
+        <!-- adding heading text -->
+        <div class="heading">
+            <h1>We Want To Hear From You</h1>
+            <br>
+            <p>If you have an idea for an activity that you think you and your fellow students would love to participate in that we are not already offering, we want to know about it!</p>
+            <br>
+            <div class="contactimg">
+                <img src="img/contact-img.svg" alt="Contact Image">
+            </div>
+        </div>
+        <!-- creating contact form section -->
+        <div class="contact-form-section">
+            <!-- creating contact form -->
+            <form class="contact-form">
+                    <h3>
+                        Contact Us
+                    </h3>
+                    <div class="contact-form-section">
+                        <label>Full Name</label>
+                        <input class="contact-form-input" type="text" placeholder="Full Name">
+                    </div>
+                    <div class="contact-form-section">
+                        <label>Student Number</label>
+                        <input class="contact-form-input" type="text" placeholder="Student Number">
+                    </div>
+                    <div class="contact-form-section">
+                        <label>Email</label>
+                        <input class="contact-form-input" type="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <label>Message</label>
+                        <br>
+                        <textarea id="message" name="message" placeholder="Message" cols="30" style="max-width: 600px;"></textarea>
+                    </div>
+                    <button class="contact-submit" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="location-info">
+            <h4>Our Location.</h4>
+            <br>
+            <h5>Algonquin College Student's Association</h5>
+            <br>
+            <p class="hours">Monday to Friday – 8:30am to 6:00pm
+                <br>
+                1385 Woodroffe Avenue (E114)
+                <br>
+                Ottawa, Ontario K2G 1V8
+                <br>
+                (613) 727-4723 x7711</p>
+        </div>
+        <!-- creating div for map section -->
+        <div class="map">
+            <!-- embedding google map -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11216.156593565902!2d-75.7569228!3d45.348022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College!5e0!3m2!1sen!2sca!4v1583194595753!5m2!1sen!2sca"></iframe>
+        </div>
+    </div>
+    <!-- creating footer -->
+    <footer>
+        <!-- adding heading to footer -->
+        <h6>Follow us</h6>
+        <div class="social-icons">
+            <!-- adding social icons to footer -->
+            <a class="facebook" href="https://facebook.com"><img src="icons/facebook.svg" alt="facebook"></a>
+            <a class="instagram" href="https://instagram.com"><img src="icons/instagram.svg" alt="instagram"></a>
+            <a class="facebook" href="https://twitter.com"><img src="icons/twitter.svg" alt="twitter"></a>
+            <a class="facebook" href="https://youtube.com"><img src="icons/youtube.svg" alt="youtube"></a>
+        </div>
+        <!-- adding back to top link -->
+        <div class="back-to-top">
+            <a href="#top">Back to top<img src="icons/arrow.svg"></a>
+        </div>
+    </footer>
+</body>
+</html>
