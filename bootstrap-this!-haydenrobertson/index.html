@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap This!</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- creating a light htemed navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <!-- creating a dropdown hamburger menu for mobile view https://www.youtube.com/watch?v=L0uNai3XyKQ-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- adding logo to navigation bar https://www.youtube.com/watch?v=L0uNai3XyKQ-->
+        <a class="navbar-brand"><img src="img/logo.png" style="height: 2rem; width: 2rem;"></a>
+        <!-- adding menu items inside dropdown hamburger menu https://www.youtube.com/watch?v=L0uNai3XyKQ -->
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <ul class="navbar-nav">
+                <!-- making list item a drop down menu https://www.youtube.com/watch?v=L0uNai3XyKQ-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" href="#">Home
+                        <!-- adding dropdown arrow to item https://www.youtube.com/watch?v=L0uNai3XyKQ-->
+                        <span class="caret"></span>
+                    </a>
+                    <!-- adding dropdown items https://www.youtube.com/watch?v=L0uNai3XyKQ-->
+                    <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                        <a href="#" class="dropdown-item">Bootsrtap</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Is</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Awesome</a>
+                    </div>
+                <!-- adding items to navigation bar -->
+                </li>            
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>            
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>            
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- adding jumbotron to display message -->
+    <div class="jumbotron" style="margin-bottom: 0px">
+        <!-- adding heading and paragraph -->
+        <h1 class="text-primary">Bootstrap</h1>
+        <p>Why Bootstrap is Just Better</p>
+        <button type="button" class="btn btn-primary">Read More</button>
+    </div>
+    <!-- creating container for text boxes and grid  -->
+    <div class="container">
+        <!-- crating wrapper for the columns -->
+        <div class="row">
+            <!-- creating text box and assigning it within the grid optomized for mobile layout https://www.youtube.com/watch?v=2wy-MnKUbJo -->
+            <div class="col-md-6 bg-white">
+                <h1 class="text-primary">Easy To Use</h1>
+                <br>
+                <p>Bootstrap is incredibly easy to use.
+                    Bootstrap can be used with or without an internet connection! Bootstrap can be directly imported into your html document to use while connected to the internet just follow this link https://getbootstrap.com/docs/4.3/getting-started/introduction/
+                </p>
+                <br>
+                <p>
+                    To use Bootstrap offline you'll have to download a small file just head over here https://getbootstrap.com/docs/4.3/getting-started/download/</p>
+                <br>
+                <p>After you've imported or installed Bootstrap no custom CSS is required to create a visually appealing website! However you always have the option of writing your own CSS to customiz eit to your liking</p>
+            </div>
+            <!-- creating text box and assigning it within the grid optomized for mobile layout https://www.youtube.com/watch?v=2wy-MnKUbJo -->
+            <div class="col-md-6 bg-white">
+                <h1 class="text-primary">Open Source</h1>
+                <br>
+                <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+                <br>
+                <p>Anyone can create aesthetically pleasing websites and even customize colors and anything theyd like with custom CSS. This means no more dated "Times New Roman" fonts on your Bootsrap website.</p>
+            </div>
+            <!-- creating text box and assigning it within the grid optomized for mobile layout https://www.youtube.com/watch?v=2wy-MnKUbJo -->
+            <div class="col-md-6 bg-white">
+                <h1 class="text-primary">Mobile First</h1>
+                <br>
+                <p>Bootstrap includes a powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of predefined classes. </p>
+            </div>
+            <!-- creating text box and assigning it within the grid optomized for mobile layout https://www.youtube.com/watch?v=2wy-MnKUbJo -->
+            <div class="col-md-6 bg-white">
+                <h1 class="text-primary">Components Library</h1>
+                <br>
+                <p>Bootstrap comes with an extensive components library that includes buttons and lists to carousels and modals. Components are easy to integrate into any site and require no knowledge of JavaScript to use.</p>
+            </div>
+            <!-- creating text box and assigning it within the grid optomized for mobile layout https://www.youtube.com/watch?v=2wy-MnKUbJo -->
+            <div class="col-md-6 bg-white">
+                <h1 class="text-primary">Components</h1>
+                <br>
+                <p>Bootstrap comes with nearly two dozen components that are ready to use right out of the box.</p>
+            </div>
+            <!-- creating text box and assigning it within the grid optomized for mobile layout https://www.youtube.com/watch?v=2wy-MnKUbJo -->
+            <div class="col-md-6 bg-white">
+                <h1 class="text-primary">Alerts</h1>
+                <br>
+                <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+            </div>
+            <!-- creating text box and assigning it within the grid optomized for mobile layout https://www.youtube.com/watch?v=2wy-MnKUbJo -->
+            <div class="col-md-6 bg-white">
+                <h1 class="text-primary">Navigation</h1>
+                <br>
+                <p>Bootsrap has a great navigation system that allows for responsive mobile first design. You can easily make your navigation bar sticky, fixed to the bottom or top, and endless more possibiolities to suit your website without the use of custom CSS. Making a drop down menu is easier than ever with bootstrap and requires no custom CSS.
+                </p>
+            </div>
+            <!-- creating text box and assigning it within the grid optomized for mobile layout https://www.youtube.com/watch?v=2wy-MnKUbJo -->
+            <div class="col-md-6 bg-white">
+                <h1 class="text-primary">Grid</h1>
+                <br>
+                <p>Bootstrap has an amzing grid system designed for the mobile first approach. Bootstraps grid systems is a responsive flex based twelve column design. It has 5 break points optomized for all screen sizes. Bootstraps grid system is far easier to use than CSS grid system and requires less code and saves time! </p>
+            </div>
+        </div>
+    </div>
+    <!-- creating footer and giving it a background color-->
+    <footer class="bg-primary">
+        <!-- creating container for row -->
+        <div class="container">
+            <!-- creating wrapper for the columns and making and text within align to center-->
+            <div class="row text-center">
+                <!-- assigning content within the grid -->
+                <div class="col-12 text-light">
+                    <p>Copyright © 2020 Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
