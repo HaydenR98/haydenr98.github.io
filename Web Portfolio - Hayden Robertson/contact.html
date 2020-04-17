@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- setting language to english -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking css stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- adding title -->
+    <title>Home</title>
+</head>
+<body>
+    <!-- addig link to go back to top -->
+    <a name="top"></a>
+    <!-- creating mobile navigation -->
+    <div class="mobile-navigation">
+        <a class="logo" href="index.html"><img src="icons/logo.svg" alt="logo"></a>
+        <a class="hamburger-menu" href="mobile-nav.html"><img src="icons/menu.svg" alt="menu"></a>
+    </div>
+    <!-- creating navigation wrapper -->
+    <div class="navigation">
+        <!-- inputing navigation elements -->
+        <a class="logo" href="index.html"><img src="icons/logo.svg" alt="logo"></a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a class="active" href="contact.html">Contact</a>
+    </div>
+    <div class="heading">   
+        <h1>GET IN TOUCH!</h1>
+    </div>
+    <div class="contact-me">
+        <div class="profile-section">
+            <picture>
+                <source media="(min-width: 1100px)" srcset="img/portrait-desktop.png">
+                <img src="img/portrait.png" alt="portrait">
+            </picture>
+            <div class="caption">
+                <h4>Hayden Robertson</h4>
+                <p>UX Designer/Photogrpaher</p>
+                <img src="icons/socials.svg">
+            </div>
+        </div>
+        <div class="get-in-touch">
+            <div class="contact-form-section">
+                <label>Full Name</label>
+                <input class="contact-form-input" type="text" placeholder="Full Name">
+            </div>
+            <div class="contact-form-section">
+                <label>Phone Number</label>
+                <input class="contact-form-input" type="text" placeholder="Phone Number">
+            </div>
+            <div class="contact-form-section">
+                <label>Email</label>
+                <input class="contact-form-input" type="email" placeholder="Email">
+            </div>
+            <div class="label">
+                <label>Message</label>
+                <br>
+                <textarea id="message" name="message" placeholder="Message" cols="30" style="max-width: 600px;"></textarea>
+            </div>
+            <button class="contact-submit" type="submit">Submit</button>
+        </div>
+    </div>
+    <!-- adding footer -->
+    <footer>
+        <!-- adding footer heading -->
+        <h2>STAY UP TO DATE!</h2>
+        <!-- creating wrapper for social icons -->
+        <div class="social-icons">
+            <!-- inserting social icons -->
+            <a class="facebook" href="https://facebook.com"><img src="icons/facebook.svg" alt="facebook"></a>
+            <a class="instagram" href="https://instagram.com"><img src="icons/instagram.svg" alt="instagram"></a>
+            <a class="twitter" href="https://twitter.com"><img src="icons/twitter.svg" alt="twitter"></a>
+            <a class="youtube" href="https://linkedin.com"><img src="icons/linkedin.svg" alt="linkedin"></a>
+        </div>
+        <!-- adding a back to top link -->
+        <div class="back-to-top">
+            <a href="#top"><img src="icons/arrow-up.svg"></a>
+            <br>
+            <h3>BACK TO TOP</h3>
+        </div>
+    </footer>
+</body>

@@ -1,0 +1,569 @@
+/* importing google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.call-to-action-bg {
+    background-image: url("img/call-to-action-bg.jpg");
+    background-size: cover;
+}
+/* styling h1 headers */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: white;
+    font-size: 60px;
+}
+/* styling h2 headers */
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: white;
+    font-size: 35px;
+}
+/* styling h3 headers */
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: white;
+    font-size: 20px;
+}
+/* styling default paragraphs */
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: rgb(212, 212, 212);
+}
+/* making tablet and desktop navigation hidden for mobile view */
+.navigation {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+/* changing background color to black */
+body {
+    background-color: black;
+}
+/* styling all buttons */
+button {
+    width: 15rem;
+    border-style: hidden;
+    border-radius: 38px;
+    height: 2.5rem;
+    background-color: #F07C41;
+    font-size: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+/* styling button hover */
+.button:hover {
+    cursor: pointer;
+}
+/* styling mobile navigation */
+.mobile-navigation {
+    display: block;
+}
+/* resisizing navigation items */
+.hamburger-menu img {
+    height: 2rem;
+    width: 2rem;
+}
+/* resizing logo */
+.logo img {
+    height: 2rem;
+    width: 3rem;
+}
+/* aligning logo to left and adding padding */
+.mobile-navigation .logo{
+    float: left;
+    padding: 2rem;
+}
+/* aligning menu to the right */
+.hamburger-menu {
+    float: right;
+    padding: 2rem;
+}
+/* resizing arrow buttons */
+a img {
+    height: 2rem;
+    width: 2rem;
+}
+/* styling call to action section, adding padding to bottom and aligning text to center */
+.call-to-action { 
+    clear: both;
+    margin: 2rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+/* aligning video play button to center */
+.video-link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* styling video button */
+.video-link button {
+    background-color: #575757;
+}
+/* resizing video frame */
+iframe {
+    width: 100%;
+    height: 16rem;
+}
+/* aligning portfolio button to center */
+.portfolio-link{
+    padding-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* styling portfolio section */
+.portfolio-section {
+    text-align: center;
+    margin: 2rem;
+}
+/* styling video section addding margin and aligning text to the center*/
+.video-portfolio {
+    margin: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+/* aligning text and items to center */
+footer {
+    text-align: center;
+    justify-content: center;
+}
+/* adding padding to social icons container */
+.social-icons {
+    padding: 2rem;
+}
+/* adding padding to social icons */
+.social-icons a {
+    padding: .8rem;
+}
+/* adding padding to bottom heading */
+.back-to-top h3 {
+    padding: 1.2rem;
+}
+/* clearing the float form logo and menu */
+.mobile-menu {
+    clear: both;
+}
+/* making links in navigation block style elelments, adding padding and styling text */
+.mobile-menu a {
+    display: block;
+    text-decoration: none;
+    font-family:'Poppins', sans-serif;
+    color: white;
+    padding: 3rem;
+    font-weight: 800;
+    font-size: 50px;
+}
+/* adding color change to active link */
+.mobile-menu a:active {
+    color: #55BDCA;
+}
+/* assigning height and wiidth to mobile back button */
+.back {
+    height: 3rem;
+    width: 3rem;
+}
+/* making photography section block style elements */
+.photography img {
+    display: block;
+    width: 100%;
+}
+/* adding padding to top and bottom of text sections */
+.text {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+/* addijng padding to top of photo */
+.photo1 {
+    padding-top: 2rem;
+}
+/* adding maregin and padding to title section and applying clearfix*/
+.title-section {
+    text-align: center;
+    clear: both;
+    padding-top: 3rem;
+    margin: 2rem;
+}
+/* adding [adding and margin to profile section */
+.profile-section {
+    padding-top: 3rem;
+    text-align: center;
+    margin: 2rem;
+}
+/* making profile picture circular */
+.profile-section img {
+    display: block;
+    width: 100%;;
+    border-radius: 50%;
+}
+/* resizing the social icons */
+.caption img {
+    padding: 3rem;
+    border-radius: 0;
+}
+/* adding padding to qualifications sections as well as aligning text to center */
+.qualifications {
+    padding-bottom: 2rem;
+    margin: 2rem;
+    text-align: center;
+}
+/* adding padding to the qualifications images */
+.qualifications img {
+    padding: 1rem;
+    width: 8rem;
+}
+/* assigning width to main section */
+.main {
+    width: 100%;
+}
+/* adding margin, padding and aligning text to center */
+.videography {
+    padding-top: 5rem;
+    text-align: center;
+    margin: 2rem;
+}
+/* adding margin, padding and aligning text to center */
+.graphic-design{
+    text-align: center;
+    margin: 2rem;
+    padding-top: 3rem;
+}
+/* adding margin, padding and aligning text to center */
+.web-design {
+    text-align: center;
+    margin: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.heading {
+    clear: both;
+    padding-top: 3rem;
+    margin: 2rem;
+    text-align: center;
+}
+/* adding margin to contact forn section */
+.contact-form-section {
+    margin: 2rem;
+}
+/* adding padding to contact form */
+.contact-form {
+	padding: 1rem;
+    width: 75%;
+    border: 1px;
+    border-radius: 30px;
+	margin: auto;
+}
+/* Styling input section of the contact form*/
+.contact-form-input {
+    margin: 0;
+	display: block;
+	height: 2.5rem;
+	font-size: 16px;
+	width: 100%;
+	background-color: rgb(114, 114, 114);
+	border-radius: 28px;
+	border: 1px solid #55BDCA;
+}
+/* Changing color of the placeholder text*/
+input[type="text"], input[type="phone"], input[type="email"] {
+    color: #ffffff;
+    font-family: 'Poppins', Regular;
+    padding-left: 1rem;
+}
+/* Styling the "submit" button*/
+button.contact-submit {
+    font-family: 'Poppins', Regular;
+    margin: 2rem;
+	border-style: hidden;
+	border-radius: 38px;
+	height: 4rem;
+	font-size: 38px;
+}
+button.contact-submit:hover {
+    transform: scale(1.1);
+}
+/* Styling the label text on forms */
+label {
+    color: white;
+    font-family: 'Poppins', Regular;
+    font-size: 22px;
+    line-height: 2;
+}
+/* styling text area on forms */
+textarea {
+    padding: 1rem;
+    font-size: 18px;
+    font-family: 'Poppins', Regular;
+    border-style: hidden;
+    border-radius: 28px;
+    border-width: 1px;;
+    color: white;
+}
+.label {
+    margin: 2rem;
+}
+@media (min-width: 810px) {
+    /* making the mobile navigation invisible for tablet viewport */
+    .mobile-navigation {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    /* making navigation flex, aligning thewmin row */
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        visibility: visible;
+        margin-top: 0;
+        margin: 2rem;
+        float: none;
+    }
+    /* adding padfding to navigation links and styling color, font and text size */
+    .navigation a {
+        text-decoration: none;
+        font-family:'Poppins', sans-serif;
+        color: white;
+        padding: 3rem;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    /* taking padding off left side of logo */
+    a.logo {
+        padding-left: 0;
+    }
+    /* chngning hover color */
+    .navigation a:hover {
+        color: #55BDCA;
+    }
+    /* making activer tab underlined */
+    .active {
+        text-decoration: underline;
+    }
+    /* reducing margin in call to action section */
+    .call-to-action {
+        margin-top: 0;
+    }
+    /* aligning text to left */
+    .call-to-action {
+        text-align: left;
+        margin: 7.5rem;
+    }
+    .video-link {
+        width: 85%;
+        margin-right: 7rem;
+        justify-content: flex-end;
+    }
+    /* aligning down button, adding margin */
+    .portfolio-link {
+        margin-left: 7rem;
+        justify-content: flex-start;
+        width: 85%;
+    }
+    /* making text align to left in portfolio section */
+    .portfolio-section {
+        width: 75%;
+        text-align: left;
+        margin: 7rem;
+    }
+    /* aligning video section text to left */
+    .video-portfolio {
+        text-align: left;
+        margin: 7rem;
+    }
+    .photo1 img {
+        height: 500px;
+        width: auto;
+    }
+    .photo2 img {
+        height: 400px;
+        width: auto;
+    }
+    .photo3 img {
+        height: 400px;
+        width: auto;
+    }
+    .photo4 img {
+        height: 500px;
+        width: auto;
+    }
+    /* making the top section a grid element */
+    .main {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: 2;
+    }
+    /* aligning title section in grid */
+    .title-section {
+        margin: 4rem;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    /* aligning profiel section in grid */
+    .profile-section {
+        margin: 4rem;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    /* adding margin to qualificatrion section */
+    .qualifications {
+        margin: 4rem;;
+        text-align: left;
+        width: 75%;
+    }
+    /* resizing qualifications icons */
+    .qualifications img {
+        padding: 0;
+        width: 5rem;
+    }
+    /* adding margin, padding and aligning text to left */
+    .videography {
+        padding-top: 5rem;
+        text-align: left;
+        margin: 7rem;
+    }
+    /* adding margin, padding and aligning text to left */
+    .graphic-design{
+        padding-top: 5rem;
+        text-align: left;
+        margin: 7rem;
+    }
+    /* adding margin, padding and aligning text to left */
+    .web-design {
+        padding-top: 3rem;
+        text-align: left;
+        margin: 7rem;
+        padding-bottom: 3rem;
+    }
+    .heading {
+        margin: 5rem;
+        text-align: left;
+    }
+    /* making contact page a grid layout */
+    .contact-me {
+        margin: 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+} 
+@media (min-width: 1200px) {
+    /* changing call to action background image */
+    .call-to-action-bg {
+        background-image: url("img/call-to-action-bg-2.jpg");
+    }
+    /* creating grid for photograhy section */
+    .photography {
+        padding-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 2rem;
+    }
+    /* removing padding from photo */
+    .photo1 {
+        padding-top: 0;
+    }
+    /* removing padding from text section */
+    .text {
+        padding-top: 0;
+    }
+    /* aligning photo within grid */
+    .photo2 {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    /* aligning 4th image in grid */
+    .photo4 {
+        grid-row: 4/5;
+        grid-column: 2/3;
+    }
+    /* changing size of video player */
+    iframe {
+        height: 700px;
+        display: block;
+        width: 100%;
+    }
+    /* changing dont size for h1 headings */
+    h1 {
+        font-size: 70px;
+    }
+    /* aligning title section in grid */
+    .title-section {
+        margin: 7rem;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    /* aligning profiel section in grid */
+    .profile-section {
+        margin: 7rem;
+    }
+    .profile-section img {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    /* adding margin to qualificatrion section */
+    .qualifications {
+        padding-top: 0;
+        width: 70%;
+        margin: 7rem;
+    }
+    .qualifications h3 {
+        padding-top: 2rem;
+    }
+        /* adding margin, padding and aligning text to left */
+    .videography, .graphic-design, .web-design {
+        max-width: 70%;
+}
