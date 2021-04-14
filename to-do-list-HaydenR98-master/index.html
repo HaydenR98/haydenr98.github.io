@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <script src="https://unpkg.com/vue@next"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="heading">
+      <h1 class="title">To Do List</h1>
+      <h1 class="number">{{unchecked}} Left</h1>
+    </div>
+    <div class="add-to-do">
+      <div class="add-item">
+        <input class="text" type="text" placeholder="Name this to do" v-model="item">
+        <button class="add" v-on:click="addToDo">Add</button>
+      </div>
+    </div>
+    <ul>
+      <!-- using v-for loop to create to do items, help from:https://www.youtube.com/watch?v=oYDRUHCytFk -->
+      <li class="item" v-for="(item, index) in items">
+        <input class="check" type="checkbox" value="" v-model="item.checked">
+        <!-- adding "checked" class to div if item is checked help from:https://www.youtube.com/watch?v=A5S23KS_-bU &  https://vuejs.org/v2/guide/class-and-style.html-->
+        <div class="text" :class="{checked : item.checked}" >{{ item.title }}</div>
+        <!-- using v-on to remove item based on index-->
+        <button class="remove" v-on:click="removeItem(index)">Remove</button>
+      </li>
+    </ul>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
+<!-- Got help from the following sources -->
+<!-- https://www.youtube.com/watch?v=oYDRUHCytFk -->
+<!-- https://www.youtube.com/watch?v=A5S23KS_-bU -->
+<!-- https://vuejs.org/v2/guide/class-and-style.html -->
