@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome to Scramble.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="game">
+      <h1 class="title">Scramble</h1>
+      <div class="board">
+        <h2 class="points">{{gameData.points}} Points</h2>
+        <h2 class="strikes">{{gameData.strikes}} Strikes</h2>  
+      </div>
+      <div class="scrambled-word">
+        <h2>{{scrambledWord}}</h2>
+      </div>
+      <div class="message" v-if="gameData.score">Correct</div>
+      <div class="message" v-if="gameData.strike">Wrong answer. Try Again</div>
+      <div class="message" v-if="!gameData.playing">3 Strikes, you're out! Click restart to play again</div>
+      <div class="message" v-if="gameData.nopass">No more passes remaining</div>
+      <div class="message" v-if="gameData.passed">You used a pass</div>
+      <br>
+      <div class="input" v-if="gameData.playing">
+        <form class="text-box" @submit.prevent="nextWord" >
+          <input class="text" type="text" placeholder="Guess the word" v-model="gameData.guess">
+          <button class="submit">Submit</button>
+        </form>
+        <br>
+        <button class="pass" v-on:click="passWord">{{gameData.passes}} Passes Remaining</button>
+      </div>
+    </div>
+    <div class="restart" v-if="!gameData.playing">
+      <button class="reset" @click="reset">Restart</button>
+    </div>
+  </div>
+  <script src="scramble.js"></script>
+</body>
+
+</html>
